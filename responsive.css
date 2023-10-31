@@ -1,0 +1,126 @@
+@media only screen and (max-width:700px) {
+    
+nav{
+    z-index: 9;
+    position: relative;
+    background: white;
+}
+    .nav_left-sec{
+        padding-left: 20px;
+        gap: 20px;
+    }
+    .hamburger.hidden{
+        display: block;
+    }
+    .nav-links{
+        width: 50%;
+    height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: white;
+        padding: 30px 20px;
+        z-index: 9;
+        transition: .4s;
+    }
+    .nav_rihgt-sec{
+        gap: 20px;
+    }
+    .close.hidden{
+        display: block;
+    }
+    .overlayForMenu{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 5;
+        transition: .4s;
+    }
+
+    main{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        background-color: white;
+    }
+    /* next and prev btns------ */
+    .next_prev.hidden{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px ;
+    }
+    .next,.prev{
+        width: 6vw;
+        height: 6vw;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    .next img , .prev img{
+        width: 2.5vw;
+    }
+    .left_section{
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+    }
+    .main-img{
+        border-radius: 0px;
+    }
+    .overlay{
+        visibility: hidden;
+    }
+    .thumbnails-container{
+        display: none;
+    }
+
+    .right_section{
+        width: 90%;
+        padding-bottom: 20;
+    }
+}
+
+@media (max-width:515px) {
+    .items-section{
+        padding: 6px 8px;
+    }
+    .name, .price, .devide {
+        line-height: 17px;
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .plus_minus{
+        padding: 0 20px;
+    }
+    .plus_minus,.addBtn{
+        width: 100%;
+    }
+    .cart-box{
+        /* width: 80vw; */
+    }
+}
+
+@media (max-width:380px) {
+    .cart-box{
+        left: auto;
+        right: 100px;
+        width: 261px;
+    height: 193px;
+    right: -67px;
+        /* width: 80vw; */
+    }
+}
